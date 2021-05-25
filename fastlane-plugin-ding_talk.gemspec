@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'xyhuangjia@gmail.com'
 
   spec.summary       = 'Auto send the pgyer app qr code to the ding talk.'
-  spec.homepage      = "https://github.com/xyhuangjia/fastlane-plugin-ding-talk.git"
+  spec.homepage      = "https://github.com/xyhuangjia/fastlane-plugin-ding-talk"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)

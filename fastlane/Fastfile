@@ -1,3 +1,17 @@
+
+PGYER_UPDATE_DESCRIOTION = '蒲公英自动上传测试' # 蒲公英测试包描述 每次打包之前可修改此处
+PGYER_API_KEY = '1042189da4cacfc4d8420f71ea08b63c' # 蒲公英api_key
+PGYER_USER_KEY = '1c84b4797efd43532860ea514c1b355c' # 蒲公英user_key
+PGYER_APP_LINK = 'https://www.pgyer.com/jingchashushu' # 蒲公英地址
+PGTER_APP_KEY = 'eba712794dcf41c5bec0b4d3bbcf15ab'  # 蒲公英app_key
+PGYER_PASSWORD = '1234' #蒲公英密码
+DINGDING_TALK = 'ea0eaaf7b235cdaaeaf6b7e4ea65ac8f220637f08d2c71e7e4e4382a68dc08ce'
 lane :test do
-  ding_talk
+  ding_talk(
+        api_key: "#{PGYER_API_KEY}", # 蒲公英用户api_key
+        app_key: "#{PGTER_APP_KEY}", # 蒲公英应用app_key
+        access_token: "#{DINGDING_TALK}", # 钉钉机器人access_token
+        markdown_desc: "iOS安装包已发布 密码 1234  下载地址:#{PGYER_APP_LINK}",
+        at_all:true
+        )
 end
