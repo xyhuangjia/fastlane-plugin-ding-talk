@@ -7,11 +7,11 @@ require 'fastlane/plugin/ding_talk/version'
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-ding_talk'
   spec.version       = Fastlane::DingTalk::VERSION
-  spec.author        = 'gaoxiang'
-  spec.email         = 'gao497868860@163.com'
+  spec.author        = 'huangjia'
+  spec.email         = 'xyhuangjia@gmail.com'
 
   spec.summary       = 'Auto send the pgyer app qr code to the ding talk.'
-  spec.homepage      = "https://github.com/GorXion/fastlane-plugin-ding-talk"
+  spec.homepage      = "https://github.com/xyhuangjia/fastlane-plugin-ding-talk.git"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
