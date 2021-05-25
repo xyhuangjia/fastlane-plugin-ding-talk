@@ -4,5 +4,10 @@
     
     
     
+      
+      <testcase classname="fastlane.lanes" name="0: ding_talk" time="0.665506">
+        
+      </testcase>
+    
   </testsuite>
 </testsuites>

@@ -1,6 +1,8 @@
 require 'fastlane/action'
 require_relative '../helper/ding_talk_helper'
 
+
+
 module Fastlane
   module Actions
     class DingTalkAction < Action
@@ -48,8 +50,9 @@ module Fastlane
             'text': "#{markdown_desc} <br> ![](#{buildQRCodeURL})"
           },
           'at': {
+            'atUserIds':[],
             'atMobiles': [], 
-            'isAtAll': "#{atAll}"
+            'isAtAll': true
           }
         }.to_json
         req.content_type = 'application/json'

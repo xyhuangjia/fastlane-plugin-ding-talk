@@ -11,7 +11,7 @@ lane :test do
         api_key: "#{PGYER_API_KEY}", # 蒲公英用户api_key
         app_key: "#{PGTER_APP_KEY}", # 蒲公英应用app_key
         access_token: "#{DINGDING_TALK}", # 钉钉机器人access_token
-        markdown_desc: "iOS安装包已发布 密码 1234  下载地址:#{PGYER_APP_LINK}",
-        at_all:true
+        markdown_desc: "插件测试信息 iOS安装包已发布 密码 1234  下载地址:#{PGYER_APP_LINK}",
+        at_all:"true"
         )
 end
